@@ -63,7 +63,7 @@ jobs:
       - name: Deploy to Render
         env:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}  # GitHub Secretsに保存したAPIキー
-        run: render deploy <ここ書かないとだめ>
+        run: render deploy 
 
       # デプロイ後の成功通知（任意）
       - name: Notify deployment success
