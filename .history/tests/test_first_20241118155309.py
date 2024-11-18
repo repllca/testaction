@@ -7,7 +7,7 @@ client = TestClient(app)
 
 def test_read_main():
     print("テスト [/]エンドポイント")
-    response = client.get("/")
+    response = client.get("nitani")
     print(f"Status Code: {response.status_code}")
     print(f"Response JSON: {response.json()}")
     assert response.status_code == 200, f"Expected status 200 for /, got {response.status_code}"

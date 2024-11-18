@@ -19,7 +19,7 @@ def test_read_user():
     print(f"Status Code: {response.status_code}")
     print(f"Response JSON: {response.json()}")
     assert response.status_code == 200, f"Expected status 200 for /users/user1, got {response.status_code}"
-    assert response.json() == {"user_password": "password4"}, f"Expected password 'password1' for user1, got {response.json()}"
+    assert response.json() == {"user_password": "password1"}, f"Expected password 'password1' for user1, got {response.json()}"
 
     # print("テスト [/users/user3]エンドポイント")
     # response = client.get("/users/user3")

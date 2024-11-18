@@ -9,7 +9,7 @@ user_dict = {
 user_info = {
     "user1": {"password": "111", "money": 1000, "age": 30},
 }
-@app.get("/")
+@app.get("alkdja;l")
 def read_root():
     return {"message": "Hello, FastAPI!"}
 
