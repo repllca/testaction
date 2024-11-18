@@ -24,7 +24,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install httpx
+          pip isntall httpx
 
       - name: Run tests
         run: |
@@ -63,7 +63,7 @@ jobs:
       - name: Deploy to Render
         env:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}  # GitHub Secretsに保存したAPIキー
-        run: render deploy csthl69u0jms73eknun0?key=MpKAVnbype8
+        run: render deploy <your-service-id>
 
       # デプロイ後の成功通知（任意）
       - name: Notify deployment success
