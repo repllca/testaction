@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # mainブランチにプッシュされた時に実行
+      - 
   pull_request:
     branches:
       - main  # mainブランチにプルリクエストが作成された時に実行

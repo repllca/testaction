@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # mainブランチにプッシュされた時に実行
+      - vercel
   pull_request:
     branches:
       - main  # mainブランチにプルリクエストが作成された時に実行
@@ -63,7 +64,7 @@ jobs:
       - name: Deploy to Render
         env:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}  # GitHub Secretsに保存したAPIキー
-        run: render deploy <your-service-id>
+        run: render deploy csthl69u0jms73eknun0?key=MpKAVnbype8
 
       # デプロイ後の成功通知（任意）
       - name: Notify deployment success
