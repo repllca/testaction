@@ -3,12 +3,11 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   build: #環境構築
     runs-on: ubuntu-latest
-
     steps:
       - name: リポジトリのチェックアウト
         uses: actions/checkout@v2
@@ -19,11 +18,3 @@ jobs:
           python-version: '3.8'
 
       - name: 依存関係のインストール
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: テスト実行
-        run: |
-          pytest  # テスト実行
-          

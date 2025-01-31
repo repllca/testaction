@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   build: #環境構築

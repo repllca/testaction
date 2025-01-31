@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   build: #環境構築
@@ -24,6 +24,5 @@ jobs:
           pip install -r requirements.txt
 
       - name: テスト実行
-        run: |
-          pytest  # テスト実行
+
           
