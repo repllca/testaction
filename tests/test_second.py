@@ -8,6 +8,7 @@ client = TestClient(app)
 
 
 def test_read_user():
+    print("テスト中!!")
     print("テスト [/users/user1]エンドポイント")
     response = client.get("/users/user1")
     print(f"Status Code: {response.status_code}")
