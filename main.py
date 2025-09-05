@@ -7,6 +7,8 @@ def subtract(a, b):
 
 def multiply(a, b):
     return a * b
+#コメントの追加
+
 
 def divide(a, b):
     if b == 0:
